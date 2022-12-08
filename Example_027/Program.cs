@@ -5,16 +5,17 @@
 // 82 -> 10
 
 // 9012 -> 12
-Console.WriteLine("Input int num");
-int num = Convert.ToInt32(Console.ReadLine());
-void SumChisel(int num)
+
+void SumChisel()
 {
+    Console.WriteLine("Input int num");
+    int num = Convert.ToInt32(Console.ReadLine());
     int sum=0;
     while(num!=0)
     {
         sum=sum+num%10;
         num=num/10;
     }
-    Console.WriteLine($"{sum}");
+    Console.WriteLine($"сумма чисел равна: {sum}");
 }
-SumChisel(num);
+SumChisel();
